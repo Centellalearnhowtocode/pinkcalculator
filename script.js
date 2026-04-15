@@ -23,3 +23,11 @@ const calculate = (btnValue) => {
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => calculate(e.target.dataset.value));
  });
+document.addEventListener(
+  "click",
+  function () {
+    const audio = document.querySelector("audio");
+    audio.play();
+  },
+  { once: true },
+);
